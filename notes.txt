@@ -1,0 +1,14 @@
+Use python3.7
+Use Python VirtualEnv
+1. pip install virtualenv
+2. source venv/bin/activate
+3. pip install django
+4. django-admin startproject maul
+
+INIT APP (creates a new app and dir)
+
+5. python3 manage.py startapp main
+
+RUN SERVER
+
+6. python3 manage.py runserver
