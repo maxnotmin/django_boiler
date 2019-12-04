@@ -12,3 +12,10 @@ INIT APP (creates a new app and dir)
 RUN SERVER
 
 6. python3 manage.py runserver
+
+7. For update to the DB and Models you need to migrate
+> UPDATE CHANGES: python manage.py makemigrations
+> 1st time running may say "no changes detected"
+> For 1st time: You must updated maul > settings.py > INSTALLED_APPS will our new app name: main.apps.MainConfig
+
+8. > python3 manage.py migrate
