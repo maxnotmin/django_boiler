@@ -17,3 +17,6 @@ class Services(models.Model):
     service_content = models.TextField()
     service_published = models.DateTimeField("date published")
 
+    def __str__(self):
+        return self.service_title
+
