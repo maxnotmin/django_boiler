@@ -24,15 +24,17 @@
             </button>
             <ul class="nav nav-pills pull-right">
                 <li role="presentation"><a href="#">Home</a></li>
-                <li role="presentation"><a href="#">About</a></li>
-                <li role="presentation"><a href="#">Contact</a></li>
+                <li role="presentation"><a href="/about">About</a></li>
+                <li role="presentation"><a href="/silencealert">Silence Alert</a></li>
+                <li role="presentation"><a href="/createalert">Create Alert</a></li>
+                <li role="presentation"><a href="/automation">Automation</a></li>
                 {% if user.is_authenticated %}
-                    <li role="presentation"><a href="#">Special Area</a></li>
+                    <li role="presentation"><a href="#">Maul Team Area</a></li>
                     <li role="presentation"><a href="/account">{{user.username}}</a></li>
                     <li role="presentation"><a href="/logout">logout</a></li>
                 <!-- Put reredundant stuff here like registration, login -->
                 {% else %}
-                    <li role="presentation"><a href="/registartion">Registration</a></li>
+                    <li role="presentation"><a href="/register">register</a></li>
                     <li role="presentation"><a href="/login">login</a></li>
 
                 {% endif %}

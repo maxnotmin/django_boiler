@@ -12,6 +12,29 @@ def homepage(request):
                   context={"services": Services.objects.all})
 
 
+
+def about(request):
+    return render(request=request,
+                  template_name="main/about.html",
+                  context={"services": Services.objects.all})
+
+
+def silencearlert(request):
+    return render(request=request,
+                  template_name="main/silencealert.html",
+                  context={"services": Services.objects.all})
+
+def createarlert(request):
+    return render(request=request,
+                  template_name="main/createalert.html",
+                  context={"services": Services.objects.all})
+
+def automation(request):
+    return render(request=request,
+                  template_name="main/automation.html",
+                  context={"services": Services.objects.all})
+
+
 def register(request):
     if request.method == "POST":
         form = UserCreationForm(request.POST)

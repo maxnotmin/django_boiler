@@ -1,0 +1,31 @@
+{% extends "main/header.html" %}
+{% block content %}
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+
+      <div class="container">
+        <h1></h1>
+        <p>Put alerts into silence</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+
+
+
+
+  <h1>NO ALERT PAGE</h1>
+<form>
+  <div class="form-group">
+    <label for="noalertinput">alert name</label>
+    <input type="text" class="form-control" id="noalertinput" aria-describedby="noalertHelp" placeholder="alert name">
+    <small id="noalertHelp" class="form-text text-muted">no alert example</small>
+  </div>
+  <div class="form-group">
+    <label for="location">Location</label>
+    <input type="text" class="form-control" id="location" placeholder="location">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="check">
+    <label class="form-check-label" for="check">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
